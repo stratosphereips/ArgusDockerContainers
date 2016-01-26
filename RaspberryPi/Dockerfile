@@ -58,6 +58,7 @@ RUN rm -rf /$VIRTUSER/$PROG-clients-$CVERS
 USER $VIRTUSER
 WORKDIR /$VIRTUSER
 RUN wget --no-check-certificate https://raw.githubusercontent.com/jpetazzo/pipework/master/pipework
+RUN chmod 777 pipework
 
 # Create the argus configuration for Stratosphere
 USER $VIRTUSER
